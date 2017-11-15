@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/css/all.css"/>
+	<link href="styles/css/tita-common.css"/>
+	<script type="text/javascript" src="scripts/vendor/components/jquery/index.js"></script>
+	<script type="text/javascript" src="scripts/BSGlobal.js"></script>
+	<script type="text/javascript" src="scripts/iTalentSDKClient.js"></script>
+</head>
+<body style="background-color: #fff; margin:0px; padding: 0px;">
+	
+
+	<h1>此弹窗为第<span class="dialog_index"></span>个弹窗</h1>
+
+	<button id="open_dialog">打开弹窗</button>
+	<button id="close_dialog">关闭弹窗</button>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+	<script type="text/javascript">	
+		//console.log(window.iTalentSDK.getPopUpData())
+		var hashString =  decodeURIComponent(window.location.href);
+		var queryString = hashString.slice(hashString.indexOf('?')+1);
+		var queryArray = queryString.split('&');
+		var dialogIndex,dialogId;
+
+
+		for(var i=0; i<queryArray.length; i++) {
+			var queryPair = queryArray[i].split('=');
+			//console.log(queryPair);
+			if(queryPair[0] == 'dialog'){
+				dialogIndex = queryPair[1];
+
+			}else if(queryPair[0] == 'widgetId') {
+				dialogId = queryPair[1];
+			}
+		}
+
+
+		if(dialogIndex == 1) {
+			window.iTalentSDK.register({
+				listenEvent : 'dialog2_closed',
+				cb : function(data) {
+					// console.log("I'm dialog1 and I receive a message from dialog2!");
+					// console.log(data);
+					// alert("I'm dialog1 and I receive a message from dialog2!");
+				}
+			})
+		}
+
+
+		if(dialogIndex >= 2) {
+			$('body').css('background-color', '#eee');
+		}
+		$('.dialog_index').text(dialogIndex);
+
+		$('#open_dialog').on('click', function(e){
+			if(dialogIndex >= 1){
+				
+				var top = e.target.getBoundingClientRect().top;
+				var left = e.target.getBoundingClientRect().left;
+
+				var childPosition = {top: top,left: left};
+	    		window.iTalentSDK.showPopup("http://"+ iframeHost +"/dialog.html#home?dialog=2",400,400,null,null,childPosition);
+			}else{
+				
+	    		window.iTalentSDK.showPopup("http://"+ iframeHost +"/dialog.html#home?dialog=2",null,null,null,null);
+			}
+			
+	    })
+	    $('#close_dialog').on('click', function(e){
+	    	e.stopPropagation();
+	    	if(dialogIndex >=2){
+	    		window.iTalentSDK.hidePopup();
+	    	}else{
+	    		window.iTalentSDK.hidePopup();
+	    	}
+	    	
+	    	if(dialogIndex >= 2) {
+	    		window.iTalentSDK.sendMessage({
+					publishEvent : 'dialog2_closed',
+					data : {
+						from : 'dialog2',
+						to : 'dialog1'
+					}
+				})
+	    	} else {
+	    		window.iTalentSDK.sendMessage({
+					publishEvent : 'dialog1_closed',
+					data : {
+						from : 'dialog1',
+						to : 'widget1'
+					}
+				})
+	    	}
+
+	    })
+	    //window.iTalentSDK.updateSize(null, document.body.scrollWidth,   document.body.scrollHeight)
+	</script>
+	
+</body>
+</html>

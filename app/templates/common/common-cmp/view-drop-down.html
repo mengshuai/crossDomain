@@ -1,0 +1,18 @@
+<span class="drop-down-btn"><%= title%></span>
+<div class="drop-list-wrapper">
+	<div class="drop-list drop-list-shadow list-shadow-spread">
+		<ul class="clearfix">
+			<% _.each(listArray,function(item,index){ %>
+				<li index="<%= index %>"><%= item.title %></li>
+			<% }) %>
+		</ul>
+	</div>
+	<div class="drop-list drop-list-real">
+		<ul class="clearfix">
+			<% _.each(listArray,function(item,index){ %>
+				<li index="<%= index %>" isListItem=true><%= item.title %></li>
+			<% }) %>
+			<li class="bgslide"></li>
+		</ul>
+	</div>
+</div>

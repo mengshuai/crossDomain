@@ -1,0 +1,28 @@
+
+.lable-common-style{
+	display: block;
+	height: 24px;
+	line-height: 26px;
+	padding: 0 5px;
+	color: #ffffff;
+	width: auto;
+	float:left;
+	border-radius:2px;
+	font-size: 12px;
+}
+.label-red{
+	@extend .lable-common-style;
+	background-color:#eb5a5c;
+}
+.label-green{
+	@extend .lable-common-style;
+	background-color:#38ba72;
+}
+.label-orange{
+	@extend .lable-common-style;
+	background-color:#f28d48;
+}
+.label-blue{
+	@extend .lable-common-style;
+	background-color:#40afd8;
+}

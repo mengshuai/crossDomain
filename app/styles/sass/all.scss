@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@import "constant.scss";
+@import 'icon-font.scss';
+@import 'common-cmp-style-v2.scss';
+
+//带有图标按钮的下拉菜单
+@import "cmp-style/icon-drop-down";
+@import "cmp-style/arrow-drop-down";
+@import "cmp-style/view-drop-down";
+@import "cmp-style/btns";
+@import "cmp-style/approve-status";
+@import "cmp-style/label";
+@import "cmp-style/form";
+@import "cmp-style/pop-windows";
+@import "cmp-style/search";
+@import "cmp-style/select-item-display";
+
+
+
+/*** reset scss,can not change **/
+
+@import 'sidebar.scss';
+@import "login.scss";
+@import "header.scss";
+@import 'index-page-style.scss';
+@import 'user-page-style.scss';
+@import 'staff-page-style.scss';
+@import 'humanresources.scss';
+@import 'products.scss';
+@import 'messages.scss';
+@import 'approve-page-style.scss';
+
+
+
+@import 'temp.scss';
+
+
+@import 'ani.scss';
+
+

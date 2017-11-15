@@ -1,0 +1,350 @@
+@charset "utf-8";
+//通用状态
+    #nav-ul-fir-wrapper{
+        position:relative;
+    }
+    .normal-sidebar{
+        position:fixed;
+        height:100%;
+        background-color: $C2;
+        z-index:999;
+        top: 50px;
+        //竖向溢出后滚动显示
+        // overflow-y: scroll;
+        // overflow: auto;
+    /*** 布局切换按钮开始****/
+        .status-switch {
+            float:right;
+            margin: 0px 10px 0 0;
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            border-radius:2px!important;
+            cursor: pointer;
+            background-color:$C3;
+            span{
+                display:block;
+                height:2px;
+                background-color:rgba(white,0.6);
+                &:nth-child(1){margin:9px auto 0 auto;}
+                &:nth-child(2){margin:3px auto 0 auto;}
+                &:nth-child(3){margin:3px auto 0 auto;}
+            }
+        }
+    /*** 布局切换按钮结束 ****/
+
+    /*** 选中高亮滑块开始 ****/
+        .item-bg-slider{
+            height:50px;
+            width:100%;
+            background-color: $C1;
+            position: absolute;
+            top:0;
+            z-index: -1;
+            pointer-events: none;
+        }
+    /*** 选中高亮滑块结束 ****/
+    /*** 一级导航开始  ****/
+        .nav-li-fir{
+            line-height: 50px;
+            cursor: pointer;
+            position: relative;
+            a{
+                color: $M6;
+                font-size: 14px;
+                font-family: $fontfamily-base;
+                display:block;
+                white-space: nowrap;
+                overflow:hidden;
+            }
+            .nav-title{
+                opacity: 0.6;
+                transition:opacity .1s $Ease;
+                &:before{
+                    content:"";
+                    position: absolute;
+                    top: 14px;
+                    left:16px;
+                    display: block;
+                    width: 20px; //兼容图标的不规范
+                    height:20px; //兼容图标的不规范
+                    background-repeat:no-repeat; 
+                    background-position:center center;
+                    pointer-events:none;//点击穿透
+
+                }
+            }
+            //预留10个一级导航（已写死）
+            &:nth-child(1){.nav-title:before{background-image:url("../svg-v2/shouye-l.svg")}}
+            &:nth-child(2){.nav-title:before{background-image:url("../svg-v2/yibiao-l.svg")}}
+            &:nth-child(3){.nav-title:before{background-image:url("../svg-v2/gongzuo-l.svg")}}
+            &:nth-child(4){.nav-title:before{background-image:url("../svg-v2/jixiao-l.svg")}}
+            &:nth-child(5){.nav-title:before{background-image:url("../svg-v2/rencai-l.svg")}}
+            &:nth-child(6){.nav-title:before{background-image:url("../svg-v2/mubiao-l.svg")}}
+            &:nth-child(7){.nav-title:before{background-image:url("../svg-v2/zhaopin-l.svg")}}
+            &:nth-child(8){.nav-title:before{background-image:url("../svg-v2/zhiye-l.svg")}}
+            &:nth-child(9){.nav-title:before{background-image:url("../svg-v2/tongshi-l.svg")}}
+            &:nth-child(10){.nav-title:before{background-image:url("../svg-v2/yingyong-l.svg")}}
+        }
+        .has-sub-list{
+            .nav-title:after{
+                content:"";
+                position:absolute;
+                top:15px;
+                left: 210px;
+                display: block;
+                width: 16px;
+                height: 16px;
+                background-image: url("../../images/left-nav.png");
+                background-position: -67px 3px;
+                pointer-events:none;//点击穿透
+                transform:rotateZ(0deg);
+                -webkit-animation:menuArrowGo .3s $Ease forwards;
+            }
+        }
+        .active{
+            .nav-title:after{
+                -webkit-animation:menuArrowBack .3s $Ease forwards;
+            }
+        }
+
+        .no-sub-list:hover{
+            .nav-title{
+                opacity: 0.95;
+                transition:opacity .1s $Ease;
+            }
+        }
+        .fake-active{
+            .nav-title{
+                background-color:$C1!important;
+                opacity:.95!important;
+            }
+        }
+    }
+
+
+
+
+//宽屏下样式
+.content-wrapper-extend{
+    padding-left: 230px;
+    -webkit-filter:blur(0px);
+
+    transition:padding-left .3s $Ease,-webkit-filter .5s $Ease;
+
+    #sidebar-region{
+        width:230px;
+        margin-left:-230px;
+        transition:margin-left .3s $Ease,width .3s $Ease;
+    }
+    .status-switch{
+       span{
+            width:18px;
+            border-top:1px solid $C3;
+            border-bottom:1px solid $C3;
+            transition:width .2s $Ease .25s,border-top .2s $Ease .25s, border-bottom .3s $Ease .25s;
+       }
+    }
+    .nav-ul-fir{
+        width: 230px;
+        transition:width  .3s $Ease;
+    }
+    .nav-li-fir{
+        width:230px;
+        transition:width .3s $Ease;
+        .nav-title{
+            text-indent: 50px;
+            width: 230px;
+            transition:width .3s $Ease,text-indent .3s $Ease,opacity .3s $Ease;
+            .navArrow{
+                opacity:1;
+                transition:opacity .3s $Ease;
+            }
+        }
+    }
+    //没有二级导航的一级导航
+    .no-sub-list.active{
+        background-color: $C1;
+        .nav-title{
+            opacity:.95;
+        }
+    }
+    .has-sub-list{
+        .nav-title:hover,.nav-ul-sec a:hover{
+            opacity:.95;
+            transition:opacity .1s $Ease;
+        }
+        .nav-ul-sec{
+            li{
+                opacity:0.6;
+                overflow:hidden;
+
+                text-indent: 55px;
+                line-height: 20px;
+                height:0;
+
+                &:nth-child(1){transition:text-indent .2s $Ease .08s,line-height .2s $Ease .08s,height .2s $Ease;}
+                &:nth-child(2){transition:text-indent .2s $Ease .11s,line-height .2s $Ease .11s,height .2s $Ease;}
+                &:nth-child(3){transition:text-indent .2s $Ease .14s,line-height .2s $Ease .14s,height .2s $Ease;}
+                &:nth-child(4){transition:text-indent .2s $Ease .17s,line-height .2s $Ease .17s,height .2s $Ease;}
+                &:nth-child(5){transition:text-indent .2s $Ease .20s,line-height .2s $Ease .20s,height .2s $Ease;}
+                &:hover{
+                    opacity:.95!important;
+                    transition:opacity .1s $Ease !important;
+                }
+            }
+        }
+    }
+    //有二级导航的一级导航
+    .has-sub-list.active{
+        width:230px;
+        background-color:rgba(0,0,0,0.1);
+        transition:background-color $Ease .3s,width .3s $Ease;
+        .nav-ul-sec{
+             li{
+                opacity:0.6;
+                text-indent: 65px;
+                line-height: 40px;
+                height:40px;
+                &:nth-child(1){transition:text-indent .2s $Ease .08s,line-height .2s $Ease .08s,height .2s $Ease;}
+                &:nth-child(2){transition:text-indent .2s $Ease .11s,line-height .2s $Ease .11s,height .2s $Ease;}
+                &:nth-child(3){transition:text-indent .2s $Ease .14s,line-height .2s $Ease .14s,height .2s $Ease;}
+                &:nth-child(4){transition:text-indent .2s $Ease .17s,line-height .2s $Ease .17s,height .2s $Ease;}
+                &:nth-child(5){transition:text-indent .2s $Ease .20s,line-height .2s $Ease .20s,height .2s $Ease;}
+            }
+            li.active{
+                opacity:.95;
+                a{
+                    background-color:$C1;
+                }
+            }
+        }
+    }
+}
+
+//窄屏下样式
+.content-wrapper-narrow{
+    padding-left:50px;
+    -webkit-filter:blur(0px);
+    transition:padding-left .3s $Ease,-webkit-filter .5s $Ease;
+    #sidebar-region{
+        width:50px!important;
+        margin-left:-50px;
+        transition:margin-left .3s $Ease,width .3s $Ease;
+    }
+    .status-switch{
+       span{
+            border-radius:1px!important;
+            border-top:1px solid rgba(white,0.0);
+            border-bottom:1px solid rgba(white,0.0);
+            width:4px;
+            transition:width .2s $Ease .25s,border-top .2s $Ease .25s, border-bottom .3s $Ease .25s;
+       }
+    }
+    .nav-ul-fir{
+        width: 50px;
+        transition:width .3s $Ease;
+    }
+    .nav-li-fir{
+        width: 50px;
+        background-color:$C2;
+        transition:width .3s $Ease,background-color .15s $Ease .15s;
+        
+        .nav-title{
+            text-indent: 80px;
+            width: 50px;
+            transition:width  .3s $Ease,text-indent  .3s $Ease;
+            &:after{
+                display:none;
+            }
+        }
+        &:hover{
+            z-index: 9;
+            width:230px;
+            transition:width .3s $Ease,background-color .1s $Ease;
+            
+            .nav-title{
+                opacity:.95;
+                text-indent: 60px;
+                width: 230px;
+                background-color:rgba(black,0.1)!important;
+                transition:width  .3s $Ease,text-indent  .3s $Ease,opacity .3s $Ease;
+                 &:after{
+                    display:block;
+                    -webkit-animation:menuArrowGo .3s $Ease forwards;
+                }
+            }
+            .nav-ul-sec{
+                li{
+                    text-indent: 35px;
+                    line-height: 40px;
+                    height:40px;
+                    a{
+                        opacity:0.6;
+                    }
+                    &:nth-child(1){transition:text-indent .2s $Ease .33s,line-height .2s $Ease .33s,height .2s $Ease .25s;}
+                    &:nth-child(2){transition:text-indent .2s $Ease .36s,line-height .2s $Ease .36s,height .2s $Ease .25s;}
+                    &:nth-child(3){transition:text-indent .2s $Ease .39s,line-height .2s $Ease .39s,height .2s $Ease .25s;}
+                    &:nth-child(4){transition:text-indent .2s $Ease .42s,line-height .2s $Ease .42s,height .2s $Ease .25s;}
+                    &:nth-child(5){transition:text-indent .2s $Ease .45s,line-height .2s $Ease .45s,height .2s $Ease .25s;}
+                    &:hover{
+                        a{
+                            opacity:.95;
+                            transition:opacity .3s $Ease;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .nav-li-fir.active{
+       .nav-title{
+            opacity:.95;
+            background-color:$C1;
+        }
+    }
+    .nav-ul-sec{
+        position: absolute;
+        background-color:$C2;
+        left:53px;
+        width:177px;
+        li.active{
+                a{
+                    background-color:$C1;
+                    opacity:.95!important;
+
+                }
+            }
+        li{
+            overflow:hidden;
+            text-indent: 25px;
+            line-height: 30px;
+            height:0;
+            &:nth-child(1){transition:text-indent .1s $Ease .08s,line-height .1s $Ease .08s,height .1s $Ease;}
+            &:nth-child(2){transition:text-indent .1s $Ease .11s,line-height .1s $Ease .11s,height .1s $Ease;}
+            &:nth-child(3){transition:text-indent .1s $Ease .14s,line-height .1s $Ease .14s,height .1s $Ease;}
+            &:nth-child(4){transition:text-indent .1s $Ease .17s,line-height .1s $Ease .17s,height .1s $Ease;}
+            &:nth-child(5){transition:text-indent .1s $Ease .20s,line-height .1s $Ease .20s,height .1s $Ease;}
+
+            a:hover{
+                opacity:.95;
+                transition:opacity .1s $Ease;
+            }
+        }
+    }
+    .item-bg-slider{display:none!important}
+}
+
+@-webkit-keyframes menuArrowGo {
+    from{-webkit-transform:rotateZ(-90deg);}
+    to{-webkit-transform:rotateZ(0deg);}
+}
+@-webkit-keyframes menuArrowBack {
+    from{-webkit-transform:rotateZ(0deg);}
+    to{-webkit-transform:rotateZ(-90deg);}
+}
+
+   
+
+    

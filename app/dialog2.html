@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/css/all.css"/>
+	<link href="styles/css/tita-common.css"/>
+	<script type="text/javascript" src="scripts/vendor/components/jquery/index.js"></script>
+	<script type="text/javascript" src="scripts/BSGlobal.js"></script>
+	<script type="text/javascript" src="scripts/iTalentSDKClient.js"></script>
+</head>
+<body style="height: 300px; width: 400px; background-color: #fff; margin:0px; padding: 0px;">
+	
+
+	<h1>请填写完整！！</h1>
+	
+</body>
+<script type="text/javascript">
+		window.iTalentSDK.register([{
+			listenEvent : 'list_close',
+				context : this,
+				cb : function(data) {
+					setTimeout(function(){
+						window.iTalentSDK.hidePopup();
+					},2000);
+					
+				}
+		}]);
+
+</script>
+</html>

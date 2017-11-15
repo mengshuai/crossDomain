@@ -1,0 +1,141 @@
+@charset "utf-8";
+.page-head{
+    width: 100%;
+    padding: 20px 20px 15px 20px;
+    background-color: $M5;
+    box-sizing: border-box;
+    .view-drop-down-region{
+        float:left;
+        height: 40px;
+    }
+    .approve-create{
+        float:right;
+    }
+    .head-drop-down{
+        float:left;
+        margin-top: -3px;
+        margin-left: 20px;
+    }
+}
+
+.drop-down-part{
+    margin-top: 30px;
+    padding:0 16px;
+    box-sizing: border-box;
+    .drop-down-group{
+        float:left;
+    }
+    .drop-down-btn{
+        float: left;
+    }
+    .btn-group{
+        float:right;
+    }
+}
+.table-part{
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top:10px;
+    .table-part-left{
+        width:100%;
+        float:left;
+        transition:width .3S $Ease;
+    }
+    .table-part-right{
+        width: 0%;
+        float:right;
+        background-image: url(../svg-v2/tongji.svg);
+        background-repeat: no-repeat;
+        height: 765px;
+        background-position: 20px 0;
+        transition:width .3S $Ease
+    }
+    .lable-common-style{
+        margin-top:10px;
+    }
+}
+.table-part-sprate{
+    .table-part-left{
+        width:60%;
+        transition:width .3S $Ease;
+    }
+    .table-part-right{
+        width: 40%;
+        transition:width .3S $Ease;
+    }
+}
+.sit-map{
+    font-size: 12px;
+    color:$M2;
+}
+.title-opr-group{
+    margin-top:25px;
+    .page-title{
+        font-size: 24px;
+        line-height: 34px;
+        color:$M1;
+        float:left;
+    }
+}
+
+.approve-process{
+    height:40px;
+    width:100%;
+    margin-top:20px;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+.tabs-part{
+    padding:0 20px;
+    box-sizing:border-box;
+    margin-top: 30px;
+}
+.form-part{
+    margin-top:15px;
+    .tab1{display:block;}
+    .tab2{display:none;}
+}
+.form-part.form-change{
+    .tab1{display:none;}
+    .tab2{display:block;}
+}
+.detail{
+    width:50%;
+    float:left;
+    padding: 0px 20px;
+    box-sizing:border-box;
+}
+.detail-main .detail .filed{
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0!important;
+    float: left!important;
+    width: 100%!important;
+    height:50px;
+    border-bottom: 1px solid #e4ebf0;
+    padding-top: 5px;
+    .text{
+        padding-left: 20px;
+        height: 20px;
+    }
+}
+.detail-main .content-left{
+    width:100%;
+    padding:0 20px;
+    box-sizing:border-box;
+    margin-top: 10px;
+}
+
+.approve .content-left .item-part{
+    margin-top:30px;
+}
+.footer-comfirm-btn .cancle,.approve-create .btn-more{
+    background-color:$M5;
+    color:$M2;
+
+}
+
+
+
+
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="314px" height="530px" viewBox="0 0 314 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>统计图</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="审批模块" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="审批-列表页-统计" transform="translate(-690.000000, -197.000000)">
+            <g id="统计图" transform="translate(690.000000, 197.000000)">
+                <g id="文字" transform="translate(15.000000, 324.000000)">
+                    <text id="统计数据" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="24" fill="#005999">
+                        <tspan x="3" y="18">统计数据</tspan>
+                    </text>
+                    <rect id="Rectangle-214" fill="#E4EBF0" x="0.818754842" y="39" width="298.181245" height="1"></rect>
+                    <rect id="Rectangle-214" fill="#E4EBF0" x="0.818754842" y="89" width="298.181245" height="1"></rect>
+                    <rect id="Rectangle-214-Copy" fill="#E4EBF0" x="0.818754842" y="139" width="298.181245" height="1"></rect>
+                    <rect id="Rectangle-214-Copy-2" fill="#E4EBF0" x="0.818754842" y="189" width="298.181245" height="1"></rect>
+                    <text id="103条" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#35434C">
+                        <tspan x="257" y="17">103条</tspan>
+                    </text>
+                    <text id="统计数据" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="24" fill="#005999">
+                        <tspan x="3" y="68">统计数据</tspan>
+                    </text>
+                    <text id="103条" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#35434C">
+                        <tspan x="257" y="67">103条</tspan>
+                    </text>
+                    <text id="统计数据" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="24" fill="#005999">
+                        <tspan x="3" y="118">统计数据</tspan>
+                    </text>
+                    <text id="103条" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#35434C">
+                        <tspan x="257" y="117">103条</tspan>
+                    </text>
+                    <text id="统计数据" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="24" fill="#005999">
+                        <tspan x="3" y="168">统计数据</tspan>
+                    </text>
+                    <text id="103条" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="30" fill="#35434C">
+                        <tspan x="257" y="167">103条</tspan>
+                    </text>
+                </g>
+                <g id="饼状图" transform="translate(52.000000, 59.000000)">
+                    <path d="M110.576923,229.118774 C171.646871,229.118774 221.153846,179.801481 221.153846,118.965517 C221.153846,58.1295534 171.646871,8.81226054 110.576923,8.81226054 C49.5069748,8.81226054 0,58.1295534 0,118.965517 C0,179.801481 49.5069748,229.118774 110.576923,229.118774 Z M111.019231,192.988506 C151.813956,192.988506 184.884615,160.044554 184.884615,119.40613 C184.884615,78.7677064 151.813956,45.8237548 111.019231,45.8237548 C70.2245053,45.8237548 37.1538462,78.7677064 37.1538462,119.40613 C37.1538462,160.044554 70.2245053,192.988506 111.019231,192.988506 Z" id="Combined-Shape" fill="#53C6C6"></path>
+                    <path d="M110.576923,8.81226054 C171.646871,8.81226054 221.153846,58.1295534 221.153846,118.965517 C221.153846,179.801481 171.646871,229.118774 110.576923,229.118774 L110.576923,192.987306 C110.724257,192.988075 110.871693,192.988506 111.019231,192.988506 C151.813956,192.988506 184.884615,160.044554 184.884615,119.40613 C184.884615,78.7677064 151.813956,45.8237548 111.019231,45.8237548 C110.871693,45.8237548 110.724257,45.8241857 110.576923,45.8250463 L110.576923,8.81226054 L110.576923,8.81226054 Z" id="Combined-Shape" fill="#F28D48"></path>
+                    <path d="M230,118.965517 C230,53.2626763 176.532467,0 110.576923,0 L110.576923,45.8250463 C110.724257,45.8241857 110.871693,45.8237548 111.019231,45.8237548 C151.666419,45.8237548 184.645309,78.5298486 184.883319,118.965517 L230,118.965517 L230,118.965517 Z" id="Combined-Shape" fill="#EB5A5C"></path>
+                    <path d="M188.017806,203.736174 C168.181666,184.025582 140.807923,171.83908 110.576923,171.83908 L110.576923,208.543796 C110.723031,208.542942 110.86924,208.542515 111.015549,208.542515 C130.970206,208.542515 149.061246,216.491032 162.272193,229.383144 L188.017806,203.736174 L188.017806,203.736174 Z" id="Combined-Shape" fill="#40AFD8" transform="translate(149.297365, 200.611112) scale(1, -1) translate(-149.297365, -200.611112) "></path>
+                    <text id="15%" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="24" fill="#35434C">
+                        <tspan x="80.5" y="96.954023">15%</tspan>
+                    </text>
+                    <text id="试用期员工" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="24" fill="#35434C">
+                        <tspan x="79.6153846" y="149.827586">试用期员工</tspan>
+                    </text>
+                </g>
+                <g id="统计切换" transform="translate(22.000000, 12.000000)">
+                    <text font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="24" fill="#35434C">
+                        <tspan x="0" y="15">统计切换</tspan>
+                    </text>
+                    <path d="M63.8206592,10 C65.101924,10 66.4337241,10 66.7178397,10 C67.2615741,10 66.8810265,10.6970521 66.7178397,10.9563257 L64.2962804,14.8037375 C64.1300672,15.0678195 63.8575561,15.0630111 63.6943694,14.8037375 L61.27281,10.9563257 C61.1065968,10.6922437 60.7524424,10 61.27281,10 C61.5212717,10 62.6498672,10 63.8206592,10 Z" id="Rectangle-9" fill="#66757F"></path>
+                </g>
+                <rect id="左右分割线" fill="#E4EBF0" x="0" y="0" width="1" height="530"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

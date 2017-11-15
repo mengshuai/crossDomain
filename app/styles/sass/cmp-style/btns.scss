@@ -1,0 +1,88 @@
+@charset "utf-8";
+//通用深色背景文字
+	.btn-common-style{
+		text-align:center;
+		min-width: 0;
+		cursor:pointer;
+		color: rgba(255,255,255,0.9);
+		margin-right:5px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.18);
+		transition:box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),background-color 0.3s;
+		border-radius:2px!important;
+		float:left;
+		-webkit-user-select: none;
+		&:hover{
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.26);
+			transition:box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),background-color 0.3s;
+		}
+	}
+	//小按钮
+	.common-btns-bgc-small{
+		@extend .btn-common-style;
+		height:26px;
+		line-height: 26px;
+		padding:0 10px;
+		margin-right:5px;
+		background-color:$C3;
+		font-family:"宋体";
+	}
+	//大按钮
+	.common-btns-bgc-big{
+		@extend .btn-common-style;
+		height:34px;
+		line-height: 34px;
+		padding:0 16px;
+		background-color:$C3;
+		font-size: 14px;
+		font-family:$fontfamily-base;
+	}
+	//通用的含有图标的按钮
+	//灰色按钮
+	.common-btns-bg-gray{
+		@extend .btn-common-style;
+		width: 34px;
+		height: 34px;
+		background-color: $M5;
+		float:right;
+		border-radius: 2px !important;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		span{
+			color:$M2;
+			font-size: 18px;
+			line-height: 34px;
+		}
+	}
+	.icon-btn{
+		background-image:url(../../images/btn.png);
+		background-position: 8px -169px;
+	}
+	//按钮波纹效果样式
+	.bg-ripple{
+		position:relative;
+		overflow:hidden;
+		z-index:6;
+		.ripple{
+			display:block;
+			position: absolute;
+			border:0 solid rgba(0,0,0,0.2);
+			border-radius:50%!important;
+			opacity:.3;
+			pointer-events:none;
+			opacity:1;
+		}
+		.btn-title{
+			z-index: 8;
+			pointer-events:none;
+		}
+	}
+	.bg-ripple-active{
+		.ripple{
+			z-index: -1;
+			border-width:150px;
+			margin-top:-150px;
+			margin-left:-150px;
+			opacity:0;
+			transition:border-width 1s,margin-top 1s,margin-left 1s,opacity 1s;
+		}
+	}

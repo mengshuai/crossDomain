@@ -1,0 +1,140 @@
+
+.staff-page{
+	padding-left:233px;
+	box-sizing:border-box;
+	width:100%;
+}
+.left-nav{
+	float:left;
+    width: 230px;
+    height: 700px;
+    margin-left: -233px;
+    background-image: url(../../images/staff/sub-nav.svg);
+    background-repeat: no-repeat;
+    background-position: 0 16px;
+    border-right: 1px solid $M4;
+}
+
+.staff-content{
+	width:100%;
+}
+.staff-header{
+	background-color:$M5;
+	height:70px;
+	.left{
+		 width: 180px;
+	    height: 70px;
+	    font-size: 24px;
+	    line-height: 70px;
+	    color: #36434d;
+	    text-indent: 16px;
+	    float:left;
+	}
+	.right{
+		float:right;
+		margin-top: 25px;
+	}
+}
+.search-part{
+	width: 300px;
+    height: 50px;
+    overflow: hidden;
+    padding-left: 16px;
+    margin-top: 20px;
+}
+
+
+.search-condition{
+	height: 20px;
+	padding-left:16px;
+	.all{
+		height: 20px;
+	    border-radius: 2px;
+	    background-color: #e4ebf0;
+	    font-size: 12px;
+	    line-height: 1.7;
+	    color: #667580;
+	    padding: 0 5px;
+	    display: block;
+	    float: left;
+	}
+	.condition-item-wrapper{
+		width:510px;
+		display:flex;
+		margin-left:50px;
+		.item{
+			flex: 1;
+		    color: #acb7bf;
+		    height: 20px;
+		    font-size: 12px;
+		    line-height: 20px;
+		}
+	}
+}
+.cards-part{
+	padding:0 16px;
+	box-sizing:border-box;
+	.card-item{
+		@extend .common-box-shadow;
+		width:340px;
+		height:220px;
+		box-shadow: 3px 5px 7px #ddd;
+		float:left;
+		margin:16px 16px 0 0;
+		background-image:url(../../images/staff/card3.svg)
+	}
+}
+
+
+
+
+/** relation page ***/
+.single-page{
+	.relation-page-top{
+		padding:16px;
+		box-sizing:border-box;
+		.drop-down-btn{
+			float:left;
+		}
+	}
+	.drop-down-arrow1,.drop-down-arrow2{
+		float:left;
+	}
+	.relation-page-content{
+		width: 840px;
+  		height: 683px;
+		background-image:url(../../images/staff/jiagou-h.png);
+		background-size:100%;
+		margin:45px auto;
+	}
+	.relation-page-content.switch{
+		width: 900px;
+	    height: 480px;
+		background-image:url(../../images/staff/jiagou-v.png);
+		margin:45px auto;
+		background-size:100% 100%;
+	}
+
+	.report-page-content{
+		width: 840px;
+    	height: 530px;
+		background-image:url(../../images/staff/jiagou2-1.png);
+		margin:45px auto;
+		background-size:100% 100%;
+	}
+	.report-page-content.switch{
+		width: 900px;
+    	height: 555px;
+		background-image:url(../../images/staff/jiagou2-2.png);
+		margin:45px auto;
+		background-size:100% 100%;
+	}
+}
+
+	input.staff-content ::-webkit-input-placeholder{
+		color:red!important;
+		font-family: "宋体";
+		font-size: 14px;
+	}
+
+

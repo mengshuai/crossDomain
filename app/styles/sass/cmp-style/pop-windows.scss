@@ -1,0 +1,73 @@
+.go-blue{
+		-webkit-filter:blur(1px)!important;
+		transition:-webkit-filter 1s $Ease !important;
+	}
+	.pop-page-regin{
+		width: 100%;
+	    height: 100%;
+		position: fixed;
+	    z-index: 99999;
+	    left: 0;
+	    top: 0;
+	    background-color:rgba(white,0.1);
+	}
+	.pop-window{
+		@extend .common-box-shadow;
+		position:relative;
+		width:55%;
+		min-height:295px;
+		max-height:800px;
+		left:22.5%;
+		top:-800px;
+		background-color:#fff;
+		padding-bottom: 50px;
+		opacity: 1;
+		border-radius: 2px!important;
+	    overflow: hidden;
+		box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+		transition:top .5s $Spring2,transform .3s $Ease;
+	}
+	.window-header{
+		position:relative;
+		height:34px;
+		background-color:$C2;
+		color:$M6;
+		text-align:center;
+		line-height: 34px;
+		.pop-title{
+			font-size: 14px;
+		}
+	}
+	.window-content{
+		max-height: 400px;
+	    width: 100%;
+	    padding: 0px 20px;
+	    box-sizing: border-box;
+	}
+	.window-footer{
+		width:100%;
+		height:55px;
+		position:absolute;
+		bottom:0;
+		padding: 0 20px;
+		box-sizing: border-box;
+		.footer-cancle-btn,.footer-comfirm-btn{
+			float:right;
+		}
+	}
+	.sub-pop-window{
+		@extend .common-box-shadow;
+		position:fixed;
+		width:55%;
+		min-height:320px;
+		max-height:800px;
+		background-color:#fff;
+		padding-bottom: 50px;
+		border-radius: 2px!important;
+	    overflow: hidden;
+	    z-index: 9;
+	    transform-origin: left top;
+	    transform: scale(0.1);
+	    opacity: 0;
+		transition:transform .3s $Ease ,top .3s $Ease,left .3s $Ease ;
+	}

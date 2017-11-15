@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/css/all.css"/>
+	<link href="styles/css/tita-common.css"/>
+	<script type="text/javascript" src="scripts/BSGlobal.js"></script>
+	<script type="text/javascript" src="scripts/vendor/components/jquery/index.js"></script>
+</head>
+<body style="height: 2000px; width: 100%;margin:0px; padding: 0px;">
+	<script type="text/javascript" src="scripts/iTalentSDKClient.js"></script>
+
+	<h1>我是一个main iframe</h1>
+	<a href="#aaa">Link 1</a>
+	<a href="#bbb">Link 2</a>
+	<button id="open_dialog">打开弹窗</button>
+	<button id="send_message">发送一个事件给widget</button>
+	<script type="text/javascript">
+
+	    var hashString =  decodeURIComponent(window.location.href);
+		var queryString = hashString.slice(hashString.indexOf('?')+1);
+		var queryArray = queryString.split('&');
+		var iframeId;
+
+
+		for(var i=0; i<queryArray.length; i++) {
+			var queryPair = queryArray[i].split('=');
+			if(queryPair[0] == 'widgetId') {
+				iframeId = queryPair[1];
+			}
+		}
+	    $('#open_dialog').on('click', function(){
+	    	//alert('iframe click');
+	    	window.iTalentSDK.showPopup("http://"+ iframeHost +"/dialog.html#home?dialog=1&widgetId=dialog1",400,200);
+	    })
+	
+		window.iTalentSDK.register([{
+			listenEvent : 'widget1_change',
+			cb : function(data) {
+				//console.log("I'm main iframe and I receive a message from widget1!");
+				//console.log(data);
+				// alert("I'm main iframe and I receive a message from widget1!");
+			}
+		}, {
+			listenEvent : 'dialog1_closed',
+			cb : function(data) {
+				//console.log("I'm main iframe and I receive a closed event  from dialog1!");
+				//console.log(data)
+				// alert("I'm main iframe and I receive a closed event  from dialog1!");
+			}
+		}], iframeId)
+		var url = window.iTalentSDK.getErrorPageUrl();
+		console.log('--'+url);
+		$('#send_message').on('click', function(){
+			iTalentSDK.sendMessage({
+				publishEvent : "main_frame_change",
+				data : {
+					from : "main_frame", 
+					to : "widget1",
+					test : 'name'
+				}
+			})
+		});
+	</script>
+</body>
+</html>

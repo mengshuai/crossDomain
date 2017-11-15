@@ -1,0 +1,285 @@
+@charset "utf-8";
+/***
+	通用的组件样式：
+	1.按钮
+	2.通用tab
+	3.通用弹层
+
+
+***/
+
+/****************************************通用按钮*********************************/
+/****************************************通用按钮结束*********************************/
+/****************************************通用tab页签切换样式开始*********************************/
+	.tab{
+			height:33px;
+			border-bottom:2px solid $M4;
+			padding-top:16px;
+			position:relative;
+
+			.tab-item{
+				font-family:$fontfamily-base;
+				cursor:pointer;
+				float:left;
+				padding:0 18px;
+				height:30px;
+				color:$M2;
+				text-align:center;
+				margin-right:2px;
+			}
+			.current-tab{
+				color:$C2;
+			}
+			.bottom-line{
+				position: absolute;
+				width: 68px;
+				left: 0;
+				height: 3px;
+				background-color: #1789CE;
+				top: 47px;
+				transition:left cubic-bezier(.51,1.74,0,.78) .5s,width cubic-bezier(.51,1.74,0,.78) .3s;
+			}
+		}
+/****************************************通用tab页签切换样式结束*********************************/
+/****************************************通用弹层 开始*********************************/
+
+/****************************************通用弹层 结束*********************************/
+	
+/*************************************通用下拉菜单 结束*********************************/
+
+
+@keyframes fontScale{
+	0%{transform:translateX(0px) scale(1);opacity:1}
+	100% {transform:translateX(-15px) scale(1.5);opacity:0}
+}
+
+
+
+
+
+.table {
+	width: 100%;
+  	max-width: 100%;
+  	font-family: "宋体";
+  	border-collapse: collapse;
+	table {
+		border-spacing: 0;
+	    border-collapse: collapse;
+	  	background-color: transparent;
+	}
+	th {
+	  text-align: left;
+	}
+  	thead > tr > th,
+	tbody > tr > th,
+	tfoot > tr > th,
+	thead > tr > td,
+	tbody > tr > td,
+	tfoot > tr > td {
+	  line-height: 1.42857143;
+	  vertical-align: top;
+	  border-bottom: 1px solid $M4;
+	  color:$M2;
+	}
+	thead > tr > th {
+		font-size: 12px;
+		vertical-align: bottom;
+		border-bottom: 1px solid $M4;
+		height: 30px;
+    	line-height: 30px;
+    	padding:0;
+    	margin: 0;
+		
+		background-color:transparent;
+		transition:background-color .2s $Ease;
+		pointer:cursor;
+		
+		.size-changing{
+			opacity: 0;
+			transition:opacity .2s $Ease;
+		}
+
+		&:hover{
+			background-color:$M5;
+			transition:background-color .2s $Ease;
+			.size-changing{
+				opacity: 1;
+				transition:opacity .2s $Ease;
+
+			}
+		}
+
+
+	  .title{
+	  	line-height:30px;
+	 	position: relative;
+	 	display:block;
+	 	float:left;
+	 	pointer-events:none;
+
+	  	.arrow-up{
+	  		position: absolute;
+	  		display:block;
+	  		top:6px;
+	  		right:-10px;
+	  		border: 3px solid transparent;
+   			border-bottom: 5px solid $M3;
+   			cursor:pointer;
+	  	}
+	  	.arrow-down{
+	  		position: absolute;
+	  		display:block;
+	  		content:"";
+	  		top:16px;
+	  		right:-10px;
+	  		border: 3px solid transparent;
+   			border-top: 5px solid $M3;
+   			cursor:pointer;
+	  	}
+	  }
+	}
+	.sort-default{
+
+	}
+	.sort-up{
+		.arrow-up{
+			border-bottom: 5px solid $C1!important;
+		}
+	}
+	.sort-down{
+		.arrow-down{
+			border-top: 5px solid $C1!important;
+		}
+	}
+
+
+	.size-changing{
+		width: 7px;
+		height: 30px;
+		background-color:$M4;
+		float:right;
+		pointer-events:none;
+		cursor:pointer;
+		span{
+			display: block;
+			border-top: 3px solid $C2;
+			border-bottom: 3px solid $C2;
+			width: 3px;
+			height: 9px;
+			position:relative;
+			margin:7px 0 0 2px;
+			&:after{
+				width:3px;
+				height:3px;
+				display:block;
+				content:"";
+				position: absolute;
+				background-color:$C2;
+				top:3px;
+				left:0;
+			}
+	   	}	
+	}
+	
+	tbody > tr > td{
+		font-size: 14px;
+		height: 45px;
+   		line-height: 45px;
+   		overflow:hidden;
+   		margin:0;
+   		padding:0;
+   		color:$M1;
+	}
+	.blue{
+		color: #005999;
+		text-decoration: none
+	}
+	.table-item-check{
+		position:relative;
+		&:before{
+			background: url(../../images/icons.png) no-repeat -180px -108px;;
+			position:absolute;
+			top: 14px;
+			display:block;
+			content:"";
+			width:18px;
+			height:19px;
+		}
+		&:after{
+			background: url(../../images/icons.png) no-repeat -216px -108px;
+			position:absolute;
+			top: 14px;
+			display:block;
+			content:"";
+			width:18px;
+			height:19px;
+		}
+	}
+
+	.table-item-check-go{
+		&:before{
+   			opacity:0;
+		}
+		&:after{
+   			opacity:1;
+            animation:dftToCheck 0.2s $Spring forwards;
+		}
+	}
+	.table-item-check-back{
+		&:before{
+   			opacity:1;
+            animation:checkToDft .2s $Ease forwards;
+		}
+		&:after{
+   			opacity:0;
+		}
+	}
+}
+/********************* 翻页按钮 ********************************/
+.page-group{
+	margin-top: 20px;
+    float: right;
+	.page-num-item{
+		width:34px;
+		height:34px;
+		border-radius:2px;
+		background-color:$M5;
+		display:block;
+		float:left;
+		line-height: 34px;
+		text-align:center;
+		font-size: 14px;
+		color:$M1;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+		position:relative;
+		cursor:pointer;
+		transition:box-shadow .3s $Ease;
+
+		&:hover{
+			box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+			z-index: 9;
+			transition:box-shadow .3s $Ease;
+
+		}
+	}
+	.active{
+		background-color:$M4;
+	}
+	.next-page{
+		width:70px;
+		margin-left:10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

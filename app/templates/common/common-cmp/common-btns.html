@@ -1,0 +1,17 @@
+<%if(btnType == "small-btn"){%>
+	<%_.each(btnArry,function(item,index){%>
+		<span class="common-btns-bgc-small bg-ripple <%= item.className?item.className:'' %>">
+			<span class='btn-title'><%- item.title?item.title:"默认按钮" %></span>
+			<i class="ripple"></i>
+		</span>
+	<%})%>
+<%}else if(btnType == "large-btn"){%>
+	<%_.each(btnArry,function(item,index){%>
+		<span class="common-btns-bgc-big bg-ripple <%= item.className?item.className:'' %>">
+			<span class='btn-title'><%- item.title?item.title:"默认按钮" %></span>
+			<i class="ripple"></i>
+		</span>
+	<%})%>
+<%}else{%>
+	<span>您的type不在规范内</span>
+<%}%>

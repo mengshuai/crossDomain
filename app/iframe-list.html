@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles/css/all.css"/>
+    <link href="styles/css/tita-common.css"/>
+    <script type="text/javascript" src="scripts/vendor/components/jquery/index.js"></script>
+    <script type="text/javascript" src="scripts/iTalentSDKServer.js"></script>
+    <script type="text/javascript" src="scripts/BSGlobal.js"></script>
+
+</head>
+<body style="height: 300px; width: 400px; margin:0px; padding: 0px;">
+    
+
+    <h1>我是一个列表</h1>
+    <ul>
+        <li>
+            <span>test</span>
+            <a href="javascript:void(0)" data-name="save">保存</a>
+        </li>
+
+        <li>
+            <span>test</span>
+            <a href="javascript:void(0)" data-name="save">保存</a>
+        </li>
+        <li>
+            <span>test</span>
+            <a href="javascript:void(0)" data-name="save">保存</a>
+        </li>
+        <li>
+            <span>test</span>
+            <a href="javascript:void(0)" data-name="save">保存</a>
+        </li>
+    </ul>
+    
+</body>
+<script type="text/javascript">
+        
+        $('a[data-name="save"]').on('click', function(){
+            window.iTalentSDK.showPopup("http://"+ iframeHost +"/dialog2.html#home?dialog=1&widgetId=dialog1", null, null, {a: 1, b:2});
+            window.iTalentSDK.sendMessage({
+                    publishEvent : "list_close",
+                    data : {
+                    }
+                })
+            
+        });
+
+        
+    </script>
+</html>

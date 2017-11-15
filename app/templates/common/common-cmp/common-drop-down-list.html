@@ -1,0 +1,14 @@
+
+<div class="common-btns-bg-gray btns btn-for-events icon-btn"></div>
+<ul class="list-ul-box list-ul-box-front">
+<% _.each(listArry,function(item,index){%>
+	<li class="list-item" item-index="<%=index+1%>"><%=item.title%></li>
+<%})%>
+	<li class="item-high-light"></li>
+</ul>
+
+<ul class="list-ul-box list-ul-box-shadow">
+	<% _.each(listArry,function(item,index){%>
+		<li class=<%="item-"+(index+1)%>><%=item.title%></li>
+	<%})%>
+</ul>

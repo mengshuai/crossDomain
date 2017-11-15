@@ -1,0 +1,10 @@
+<div class="tab">
+	<%_.each(tabItems,function(item,index){%>
+			<%if(!index){%>
+	 			<div class="tab-item font-16 current-tab"  event-index="tab<%=index%>"><%= item.title %></div>
+			<%}else{%>
+	 			<div class="tab-item font-16"  event-index="tab<%=index%>"><%= item.title %></div>
+			<%}%>
+	<%})%>
+	<div class="bottom-line"></div>
+</div>

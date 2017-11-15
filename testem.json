@@ -1,0 +1,7 @@
+{
+  "framework": "jasmine",
+   "test_page": "test/test.html",
+   "routes": {
+	  "test/tests.html": "test/tests.html#home"
+	}
+}

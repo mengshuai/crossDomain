@@ -1,0 +1,1220 @@
+@charset "UTF-8";
+/* line 29, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@-webkit-keyframes dftToCheck {
+  /* line 62, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -webkit-transform: rotateZ(45deg);
+  }
+
+  /* line 63, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+
+@-moz-keyframes dftToCheck {
+  /* line 66, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -moz-transform: rotateZ(45deg);
+  }
+
+  /* line 67, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -moz-transform: rotateZ(0deg);
+  }
+}
+
+@-ms-keyframes dftToCheck {
+  /* line 70, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -ms-transform: rotateZ(45deg);
+  }
+
+  /* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -ms-transform: rotateZ(0deg);
+  }
+}
+
+@-o-keyframes dftToCheck {
+  /* line 74, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -o-transform: rotateZ(45deg);
+  }
+
+  /* line 75, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -o-transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes checkToDft {
+  /* line 62, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -webkit-transform: rotateZ(-45deg);
+  }
+
+  /* line 63, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+
+@-moz-keyframes checkToDft {
+  /* line 66, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -moz-transform: rotateZ(-45deg);
+  }
+
+  /* line 67, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -moz-transform: rotateZ(0deg);
+  }
+}
+
+@-ms-keyframes checkToDft {
+  /* line 70, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -ms-transform: rotateZ(-45deg);
+  }
+
+  /* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -ms-transform: rotateZ(0deg);
+  }
+}
+
+@-o-keyframes checkToDft {
+  /* line 74, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -o-transform: rotateZ(-45deg);
+  }
+
+  /* line 75, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -o-transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes popShow {
+  /* line 62, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  /* line 63, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes popShow {
+  /* line 66, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -moz-transform: scale(0);
+  }
+
+  /* line 67, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -moz-transform: scale(1);
+  }
+}
+
+@-ms-keyframes popShow {
+  /* line 70, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -ms-transform: scale(0);
+  }
+
+  /* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -ms-transform: scale(1);
+  }
+}
+
+@-o-keyframes popShow {
+  /* line 74, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -o-transform: scale(0);
+  }
+
+  /* line 75, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -o-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes popHide {
+  /* line 62, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 63, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -webkit-transform: scale(0);
+  }
+}
+
+@-moz-keyframes popHide {
+  /* line 66, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -moz-transform: scale(1);
+  }
+
+  /* line 67, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -moz-transform: scale(0);
+  }
+}
+
+@-ms-keyframes popHide {
+  /* line 70, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -ms-transform: scale(1);
+  }
+
+  /* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -ms-transform: scale(0);
+  }
+}
+
+@-o-keyframes popHide {
+  /* line 74, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -o-transform: scale(1);
+  }
+
+  /* line 75, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -o-transform: scale(0);
+  }
+}
+
+@-webkit-keyframes newMessageCome {
+  /* line 62, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -webkit-transform: scale(2);
+  }
+
+  /* line 63, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes newMessageCome {
+  /* line 66, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -moz-transform: scale(2);
+  }
+
+  /* line 67, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -moz-transform: scale(1);
+  }
+}
+
+@-ms-keyframes newMessageCome {
+  /* line 70, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -ms-transform: scale(2);
+  }
+
+  /* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -ms-transform: scale(1);
+  }
+}
+
+@-o-keyframes newMessageCome {
+  /* line 74, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -o-transform: scale(2);
+  }
+
+  /* line 75, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -o-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fontScale {
+  /* line 111, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  from {
+    -webkit-transform: scale(1);
+    color: #36434d;
+  }
+
+  /* line 112, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/const.scss */
+  to {
+    -webkit-transform: scale(1.5);
+    color: transparent;
+  }
+}
+
+/* line 2, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/reset.scss */
+body, div, span, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/reset.scss */
+ul, li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'header';
+  src: url("../../images/components/iTalent-header/fonts/v1/header.eot");
+  src: url("../../images/components/iTalent-header/fonts/v1/header.eot#iefix") format("embedded-opentype"), url("../../images/components/iTalent-header/fonts/v1/header.ttf") format("truetype"), url("../../images/components/iTalent-header/fonts/v1/header.woff") format("woff"), url("../../images/components/iTalent-header/fonts/v1/header.svg#header") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 17, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+[class^="header-icon-"], [class*=" header-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'header' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 32, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-xiaoxi:before {
+  content: "\e900";
+}
+
+/* line 35, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-work-notice:before {
+  content: "\e901";
+}
+
+/* line 38, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-team-notice:before {
+  content: "\e902";
+}
+
+/* line 41, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-sousuo:before {
+  content: "\e903";
+}
+
+/* line 44, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-shezhi:before {
+  content: "\e904";
+}
+
+/* line 47, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-reply:before {
+  content: "\e905";
+}
+
+/* line 50, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-recruit:before {
+  content: "\e906";
+}
+
+/* line 53, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-in-reward:before {
+  content: "\e907";
+}
+
+/* line 56, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-huanfu:before {
+  content: "\e908";
+}
+
+/* line 59, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-fans:before {
+  content: "\e909";
+}
+
+/* line 62, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-ex-reward:before {
+  content: "\e90a";
+}
+
+/* line 65, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-daiban:before {
+  content: "\e90b";
+}
+
+/* line 68, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-chanpin:before {
+  content: "\e90c";
+}
+
+/* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-team:before {
+  content: "\e90d";
+}
+
+/* line 74, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-project:before {
+  content: "\e90e";
+}
+
+/* line 77, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-notice:before {
+  content: "\e90f";
+}
+
+/* line 80, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-me:before {
+  content: "\e910";
+}
+
+/* line 83, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-department:before {
+  content: "\e911";
+}
+
+/********add bg*****/
+/* line 90, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-me {
+  background: #9dd0eb !important;
+}
+
+/* line 93, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-department {
+  background: #f1cd70 !important;
+}
+
+/* line 96, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-notice {
+  background: #faa985 !important;
+}
+
+/* line 99, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-project {
+  background: #8bc2df !important;
+}
+
+/* line 102, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-at-team {
+  background: #8bc1eb !important;
+}
+
+/* line 105, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-reply {
+  background: #9ec76f !important;
+}
+
+/* line 108, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-work-notice {
+  background: #86cfbe !important;
+}
+
+/* line 111, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-team-notice {
+  background: #8abfe3 !important;
+}
+
+/* line 114, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-recruit {
+  background: #87cdbf !important;
+}
+
+/* line 117, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-fans {
+  background: #aab0e8 !important;
+}
+
+/* line 120, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-in-reward {
+  background: #f06164 !important;
+}
+
+/* line 123, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-font.scss */
+.header-icon-ex-reward {
+  background: #fdbf2c !important;
+}
+
+/* line 3, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.iTalent-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 980px;
+  z-index: 9999;
+  height: 50px;
+  -webkit-filter: blur(0px);
+  transition: -webkit-filter 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-bottom: 1px solid #e4ebf0;
+}
+
+/* line 17, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.header-left {
+  float: left;
+  width: 300px;
+  height: 100%;
+}
+
+/* line 22, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.company-icon {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+/* line 26, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.company-icon img {
+  display: block;
+  width: 78px;
+  height: 30px;
+}
+
+/* line 33, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.header-right {
+  float: right;
+}
+/* line 35, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.header-right .user-info-region {
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  margin-left: 15px;
+  margin: 7px 20px 0 15px;
+}
+/* line 42, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.header-right .btns-group {
+  display: block;
+  float: right;
+}
+
+/* line 47, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.search-icon-box {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 51, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.opr-btns {
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px !important;
+  position: relative;
+  background-color: white;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 59, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.opr-btns:hover {
+  background-color: #e4ebf0;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 62, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.opr-btns:hover .common-link {
+  color: #004170;
+  -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 66, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.opr-btns:hover .tips {
+  display: block;
+}
+
+/* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.common-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #66757f;
+  -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  text-align: center;
+  line-height: 50px !important;
+}
+
+/* line 81, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.new-message {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  background: #fe5042;
+  top: 5px;
+  right: 5px;
+  line-height: 14px;
+  color: #fff;
+  font: 12px/18px arial;
+  -webkit-animation: newMessageCome 1s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -moz-animation: newMessageCome 1s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -ms-animation: newMessageCome 1s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -o-animation: newMessageCome 1s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  animation: newMessageCome 1s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+}
+
+/* line 96, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.opr-btns-select {
+  background-color: #e4ebf0;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 100, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.opr-btns-select .common-link {
+  color: #004170;
+  -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 105, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.opr-btns-select:hover .tips {
+  display: none;
+}
+
+/* line 111, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.list-wrapper {
+  width: 340px;
+  height: auto;
+  max-height: 500px;
+  background-color: #fff;
+  position: absolute;
+  top: 53px;
+  right: 10px;
+  box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 3px;
+  transform-origin: top right;
+  transform: scale(0);
+  overflow: hidden\9;
+  border: 1px solid #e4ebf0;
+  display: none\9;
+  /**IE8\9\10**/
+}
+/* line 129, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.list-wrapper .title {
+  height: 34px;
+  background-color: #005999;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 34px;
+}
+/* line 137, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.list-wrapper .view-all {
+  height: 50px;
+}
+/* line 139, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.list-wrapper .view-all a {
+  display: block;
+  float: right;
+  line-height: 50px;
+  font-size: 12px;
+  margin-right: 15px;
+  color: #005999;
+}
+
+/* line 149, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.content-visible {
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: opacity 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: opacity 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: opacity 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* line 154, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.list-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -moz-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -ms-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -o-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  display: block\9;
+  /**IE8\9\10**/
+}
+/* line 173, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.list-open .content-visible {
+  filter: alpha(opacity=1000);
+  opacity: 1;
+  -webkit-transition: opacity 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: opacity 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: opacity 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: opacity 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* line 179, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/header.scss */
+.list-close {
+  display: none\9;
+  /**IE8\9\10**/
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-animation: popHide 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  -moz-animation: popHide 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  -ms-animation: popHide 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  -o-animation: popHide 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: popHide 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+/* line 2, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/search.scss */
+.search-icon-box .list-wrapper-open {
+  width: 340px;
+  height: 70px;
+  max-height: 70px;
+}
+/* line 7, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/search.scss */
+.search-icon-box .form-input {
+  height: 27px;
+  width: 310px;
+  margin: 20px 15px;
+  border-bottom: 1px solid #e4ebf0;
+  position: relative;
+}
+/* line 13, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/search.scss */
+.search-icon-box .form-input:after {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 26px;
+  width: 0;
+  height: 2px;
+  background-color: #1b85d6;
+  transition: left cubic-bezier(0.66, 1.65, 0.23, 0.87) 0.15s, width cubic-bezier(0.66, 1.65, 0.23, 0.87) 0.15s;
+}
+/* line 24, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/search.scss */
+.search-icon-box .form-input input {
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin: auto;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #36434d;
+}
+/* line 38, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/search.scss */
+.search-icon-box .form-input-active:after {
+  width: 100%;
+  left: 0;
+  transition: left cubic-bezier(0.66, 1.65, 0.23, 0.87) 0.35s, width cubic-bezier(0.66, 1.65, 0.23, 0.87) 0.35s;
+}
+
+/* line 2, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .color-title {
+  font-size: 12px;
+  color: #36434d;
+  margin: 15px;
+}
+/* line 7, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .color-range {
+  display: block;
+  width: 310px;
+  margin: 20px auto;
+  -webkit-appearance: none;
+  border-radius: 3px !important;
+  border: none;
+  outline: none;
+}
+/* line 16, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 20px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+  background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+  background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+  background: linear-gradient(to rightright, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+}
+/* line 28, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 8px;
+  background: #fff;
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+/* line 37, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .selector-btn {
+  margin-top: 15px;
+}
+/* line 40, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-default {
+  float: left;
+  margin-top: 10px;
+}
+/* line 44, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-box {
+  float: left;
+  position: relative;
+  margin-left: 15px;
+}
+/* line 48, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-box span {
+  display: block;
+  position: absolute;
+  left: 0px;
+  height: 0px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../images/components/iTalent-header/icons.png);
+}
+/* line 57, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-box .un-check {
+  background-position: -180px -108px;
+}
+/* line 61, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-box .in-check {
+  background-position: -216px -108px;
+}
+/* line 66, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-go .un-check {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+/* line 69, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-go .in-check {
+  filter: alpha(opacity=1000);
+  opacity: 1;
+  -webkit-animation: dftToCheck 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -moz-animation: dftToCheck 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -ms-animation: dftToCheck 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -o-animation: dftToCheck 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  animation: dftToCheck 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+}
+/* line 75, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-back .un-check {
+  filter: alpha(opacity=1000);
+  opacity: 1;
+  -webkit-animation: checkToDft 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -moz-animation: checkToDft 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -ms-animation: checkToDft 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -o-animation: checkToDft 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  animation: checkToDft 0.2s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+}
+/* line 79, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .check-back .in-check {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+/* line 84, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .text {
+  text-indent: 40px;
+  display: block;
+  font-size: 12px;
+  color: #66757f;
+  line-height: 20px;
+}
+/* line 91, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .comfirm-btn-style {
+  display: block;
+  width: 70px;
+  height: 34px;
+  border-radius: 2px;
+  background-color: #1587d8;
+  float: right;
+  color: #ffffff;
+  text-align: center;
+  line-height: 34px;
+  margin: 0 15px 15px 0;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.18);
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 107, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .comfirm-btn-style:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.26);
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 112, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/skin.scss */
+.skin-icon-box .list-wrapper-open {
+  width: 340px;
+  max-height: 140px;
+}
+
+/* line 2, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-list {
+  max-height: 320px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* line 7, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a {
+  display: block;
+  height: 30px;
+  width: 310px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e4ebf0;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 16, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a span {
+  display: block;
+  float: left;
+  line-height: 30px;
+}
+/* line 21, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a .icon-box {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #96bf65;
+}
+/* line 29, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a .content {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #36434d;
+  -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 35, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a .num {
+  font-size: 20px;
+  color: #005999;
+  margin-left: 10px;
+}
+/* line 40, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a .date {
+  font-size: 12px;
+  color: #acb7bf;
+  float: right;
+}
+/* line 45, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a:hover {
+  background-color: #f5f8fa;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 48, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .message-item-a:hover .content {
+  color: #005999;
+  -webkit-transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 55, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/message.scss */
+.message-icon-box .list-wrapper-open {
+  width: 340px;
+  max-height: 350px;
+}
+
+/* line 2, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .message-list {
+  max-height: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* line 7, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .message-item {
+  display: block;
+  width: 310px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e4ebf0;
+}
+/* line 13, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .user-pic {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  overflow: hidden;
+}
+/* line 23, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .user-pic img {
+  width: 50px;
+  height: 50px;
+}
+/* line 28, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .item-detail {
+  width: 250px;
+  margin-left: 10px;
+  float: left;
+}
+/* line 33, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .detail-head {
+  margin-top: 5px;
+}
+/* line 35, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .detail-head span {
+  display: block;
+  float: left;
+  line-height: 20px;
+  font-size: 12px;
+}
+/* line 41, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .detail-head .user-name {
+  color: #36434d;
+  font-weight: bold;
+  font-family: "pingFangSc","宋体";
+}
+/* line 46, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .detail-head .user-opr {
+  color: #36434d;
+  margin-left: 10px;
+}
+/* line 50, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .detail-head .date {
+  color: #acb7bf;
+  float: right;
+}
+/* line 55, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .detail-content {
+  font-size: 12px;
+  line-height: 20px;
+  color: #66757f;
+  margin-top: 5px;
+  max-height: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* line 68, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .message-item:hover {
+  background-color: #f5f8fa;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 71, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .message-item:hover .user-name, .todos-icon-box .message-item:hover .user-opr {
+  color: #005999;
+  -webkit-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+/* line 77, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/todos.scss */
+.todos-icon-box .list-wrapper-open {
+  width: 340px;
+  max-height: 450px;
+}
+
+/***************个人信息 开始********************/
+/* line 4, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .user-info {
+  float: right;
+  margin-top: 3px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 9, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .user-info .user-photo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  float: left;
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+/* line 16, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .user-info .user-photo img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+/* line 22, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .user-info .name-pic {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+/* line 33, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .user-info .user-name {
+  display: inline-block;
+  height: 30px;
+  font-family: "宋体";
+  font-size: 14px;
+  color: #005999;
+  float: right;
+  line-height: 30px;
+  margin-left: 10px;
+  padding-right: 20px;
+  position: relative;
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 48, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .user-info .user-name:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 13px;
+  right: 5px;
+  border-top: 6px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top-color: #005999;
+}
+/* line 64, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .dp-down-list {
+  position: relative;
+  right: -10px;
+  top: 45px;
+}
+/* line 70, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .list-ul-box {
+  border-radius: 2px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 75, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .list-ul-box a {
+  color: #36434d;
+  display: block;
+  width: 140px;
+  height: 32px;
+  line-height: 32px;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 12px;
+  padding: 0 15px;
+  overflow: hidden;
+}
+/* line 86, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .list-ul-box a:hover {
+  background: #f5f8fa;
+}
+/* line 92, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .dp-list-front {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f5f8fa;
+  z-index: 999 !important;
+  background-color: #fff;
+  transform-origin: top right;
+  transform: scale(0);
+  display: none \9;
+}
+/* line 102, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .dp-list-front li a {
+  width: 140px;
+  height: 32px;
+}
+/* line 108, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .dp-list-shadow {
+  z-index: 998 !important;
+  background-color: transparent !important;
+  display: none;
+}
+/* line 112, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .dp-list-shadow li a {
+  color: transparent;
+  background-color: transparent !important;
+}
+/* line 116, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .dp-list-shadow .li-scale a {
+  color: #36434d;
+  transform-origin: 20% center;
+  animation: fontScale 0.3s linear forwards;
+}
+/* line 125, /Users/guomeishan/workspace/iTalent/iTalent-header/src/styles/sass/icon-view-style/user-info.scss */
+.user-info-region .dp-down-active .dp-list-front {
+  -webkit-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -moz-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -ms-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  -o-animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  animation: popShow 0.3s cubic-bezier(0.66, 1.65, 0.23, 0.87) forwards;
+  display: block \9;
+}

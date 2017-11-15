@@ -1,0 +1,9 @@
+<div class="simple-tabs">
+    <%_.each(stabItems,function(item,index){%>
+            <%if(item.isCurrent){%>
+                <span class="stab-item stab-active"  event-index="tab<%=index%>"><%= item.title %></span>
+            <%}else{%>
+                <span class="stab-item stab-normal"  event-index="tab<%=index%>"><%= item.title %></span>
+            <%}%>
+    <%})%>
+</div>

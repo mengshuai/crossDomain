@@ -1,0 +1,348 @@
+@charset "utf-8";
+.loginContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.login-page-wrapper{
+    .start-page-mask{
+        height:100%;
+        width: 100%;
+        position:fixed;
+        left:0;
+        top:0;
+        z-index: 9;
+        background-color:$C1;
+        .slogan-outer{
+            position: absolute;
+            left:50%;
+            height:50%;
+            margin-left:-200px;
+            margin-top:50px;
+            .slogan-text{
+                width: 400px;
+                height: 115px;
+                background-image: url("../../images/login/nature.png");
+                background-repeat:no-repeat;
+                position: absolute;
+                bottom: 0;
+                z-index: 9;
+            }
+            .slogan-verson{
+                width: 400px;
+                height: 290px;
+                background-image: url("../../images/login/verson.png");
+                background-repeat: no-repeat;
+                position: absolute;
+                bottom: 0;
+                left: 40px;
+                z-index: 8;
+                -webkit-animation:breathing 1.5s $Ease infinite;
+            }
+        }
+    }
+    .login-page-bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-size:cover;
+        background-position:center;
+    }
+    .login-part-box{
+        width: 42%;
+        height: 320px;
+        position: absolute;
+        min-width: 550px;
+        margin: -160px 0 0 -21%;
+        left: 50%;
+        top: 50%;
+        .top-slogan{
+            width:375px;
+            height:60px;
+            font-size: 34px;
+            color:#ffffff;
+            font-family:"MicrosoftYaHei";
+            line-height: 60px;
+            text-align:center;
+            margin:0 auto;
+        }
+        .login-box{
+            width:100%;
+            margin-top:50px;
+            opacity: 0.8;
+            border-radius: 2px;
+            background-color: #0e5999;
+            padding: 15px 0;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+        }
+        .login-input{
+            width:100%;            
+        }
+        .input-box{
+            width:50%;
+            box-sizing:border-box;
+            float: left;
+            .input-item{
+                width:100%;
+                height:36px;
+                border-bottom:1px solid rgba(white,0.94);
+                padding-left:35px;
+                box-sizing:border-box;
+                position:relative;
+                
+                &:before{
+                    width:20px;
+                    height:20px;
+                    display: block;
+                    content:"";
+                    float:left;
+                    margin-left:-30px;
+                    color:#fff;
+                    background-repeat: no-repeat;
+                    background-position: 0px 1px;
+                    margin-top:5px;
+                }
+                &:after{
+                    height:2px;
+                    content: "";
+                    position: absolute;
+                    left:0;
+                    bottom:-2px;
+                    background-color: #1b87d9;
+                   
+                    left:50%;
+                    width:0;
+                    transition: width .5s $Ease,left .5s $Ease;
+                }
+                input{
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    height:24px;
+                    background-color:transparent;
+                    color:rgba(white,0.94);
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                /* WebKit browsers */
+                input::-webkit-input-placeholder { 
+                    color:rgba(white,0.6)!important;
+                }
+                /* Mozilla Firefox 4 to 18 */
+                input:-moz-placeholder { 
+                    color:rgba(white,0.6)!important;
+                }
+                /* Mozilla Firefox 19+ */
+                input::-moz-placeholder { 
+                    color:rgba(white,0.6)!important;
+                }
+                /* Internet Explorer 10+ */
+                input:-ms-input-placeholder { 
+                    color:rgba(white,0.6)!important;
+                }
+            }
+            .line-go{
+                border-bottom:1px solid transparent;
+                &:after{       
+                    left:0;
+                    width:100%;
+                    transition: width .6s $Spring,left .6s $Spring;
+                }
+            }
+            .error-msg{
+                display:block;
+                height:20px;
+                line-height: 20px;
+                font-size:12px;
+                color:#c42c2f;
+                text-indent: 40px;
+                width: 190px;
+                transform:scale(0);
+                transform-origin: center;
+            }
+        }
+        .input-box-left{
+            padding:0 20px 0px 15px;
+            .input-item{
+                &:before{
+                    background-image: url("../../images/login/email.svg");
+                }
+            }
+        }
+        .input-box-right{
+            padding:0 15px 0px 20px;
+            .input-item{
+                &:before{
+                    background-image: url("../../images/login/psw.svg");
+                }
+            }
+        }
+        .input-illigle{
+            .error-msg{
+                animation:errorMsgShow .35s $Ease forwards;
+            }
+            .input-item{
+                &:after{
+                    background-color: #c42c2f;
+                }
+                border-bottom-color:#c42c2f;
+            }
+
+        }
+        .input-lligle{
+            .error-msg{
+                animation:errorMsgHide .35s $Ease forwards;
+            }
+        }
+        
+        .login-opr{
+            padding:10px 15px 0 15px
+        }
+        .new-user,.pwd-forget,.remeber-me label{
+            display:block;
+            height:24px;
+            line-height: 24px;
+            font-size:14px;
+            color:rgba(white,0.6);
+            cursor: pointer;
+            transition: color .2s $Ease;
+            &:hover{
+                color:rgba(white,0.94);
+                transition: color .2s $Ease;
+            }
+        }
+        .new-user{
+            float:left;
+            margin-left:5px;
+        }
+        .pwd-forget{
+            float:right;
+            margin-right:5px;
+        }
+        .remeber-me{
+            float:right;
+            width:70px;
+            height:30px;
+            margin-right:40px;
+            cursor:pointer;
+            .check-box-uk{
+                width:16px;
+                height:16px;
+                float:left;
+                margin-top: 2px;
+                cursor:pointer;
+                border:2px solid #89cbfa;
+                transition: border .2s $Ease;
+                animation:ckToCk .3s $Spring forwards;
+            }
+            .check-box-ck{
+                width:20px;
+                height:20px;
+                margin-left:-20px;
+                float:left;
+                background-image:url("../../images/icons.png");
+                background-position:-216px -106px;
+                opacity: 0;
+                animation:ckToUk .3s $Spring forwards;
+
+            }
+            label{
+                float:right;
+            }
+            &:hover{
+                .check-box-uk{
+                    border:2px solid #1b87d9;
+                    transition: border .2s $Ease;
+
+                }
+                label{
+                    color:rgba(white,0.94);
+                    transition: color .2s $Ease;
+                }
+            }
+        }
+        .to-check{
+            .check-box-ck{
+                animation:ckToCk .3s $Spring forwards;
+            }
+            .check-box-uk{
+                animation:ckToUk .3s $Spring forwards;
+            }
+        }
+        .login-btn{
+            height: 46px;
+            border-radius: 2px;
+            background-color: #0e5999;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+            cursor:pointer;
+            font-size: 20px;
+            line-height: 46px;
+            text-align:center;
+            margin-top:10px;
+            transition:box-shadow .3s $Ease, background-color .3s $Ease;
+            a{
+                display:block;
+                width:100%;
+                height: 100%;
+                color: rgba(white,0.6);
+                transition: color .2s $Ease;
+            }
+            &:hover{
+                a{
+                    color:rgba(white,0.94);
+                    transition: color .2s $Ease;
+                }
+                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+                background-color:#135FA0;
+                transition:box-shadow .3s $Ease, background-color .3s $Ease;
+            }
+        }
+    }
+}
+
+//小屏幕下样式
+@media (max-width:1400px){
+   
+}
+
+// animation:mymove 0.5s $Ease forwards;
+
+@keyframes ckToCk{
+    from{transform:rotateZ(-45deg) scale(0.8);opacity: 0;}
+    to{transform:rotateZ(0deg) scale(1);opacity: 1;}
+}
+
+@keyframes ckToUk{
+    from{transform:rotateZ(0deg) scale(1);opacity: 1;}
+    to{transform:rotateZ(-45deg) scale(0.8);opacity: 0;}
+}
+
+
+@keyframes errorsAni{
+    from{transform:scale(1.5)}
+    to{transform:scale(1)}
+}
+@keyframes breathing{
+    from{opacity:0}
+    60%{opacity:1}
+    to{opacity:0}
+}
+
+@keyframes errorMsgShow{
+    0%{transform:scale(1.5);opacity:0;}
+    100% {transform:scale(1);opacity:1;}
+}
+
+@keyframes errorMsgHide{
+    0%{transform:scale(1);opacity:1;}
+    100% {transform:scale(1.5);opacity:0;}
+}
+
+
+

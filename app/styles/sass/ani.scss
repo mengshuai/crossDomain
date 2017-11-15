@@ -1,0 +1,61 @@
+
+//组件动效示例
+.ani-page{
+	section{
+		border-bottom: 2px solid #EFEFEF;
+		padding: 20px;
+	}
+
+//单选样式
+	.radio{
+		width: 18px;
+		height: 18px;
+		position:relative;
+		cursor:pointer;
+		span{
+			display: block;
+			position: absolute;
+			left:0;
+			top:0;
+			border-radius:100%;
+
+		}
+		.outer{
+			width:18px;
+			height:18px;
+			box-sizing:border-box;
+			border:2px solid $C4;
+			transition: border .3s $Ease;
+		}
+		.inner{
+			background-color:$C2;
+
+			width:0;
+			height:0;
+			left:9px;
+			top:9px;
+			transition: width .3s $Ease,height .3s $Ease,left .3s $Ease,top .3s $Ease;
+
+		}
+		&:hover{
+			.outer{
+				border:2px solid $C2;
+				transition: border .3s $Ease;
+			}
+		}
+	}
+	.radio-checked{
+		.outer{
+			border-color:$C2;
+		}
+		.inner{
+
+			width:10px;
+			height:10px;
+			left:4px;
+			top:4px;
+			transition: width .3s $Spring,height .3s $Spring,left .3s $Spring,top .3s $Spring;
+
+		}
+	}
+}

@@ -1,0 +1,13 @@
+
+<%console.log(selectArray)%>
+	<ul>
+		<% _.each(selectArray,function(item,index){ %>
+			<li class="selected-item">
+				<%= item.title%>
+				<span class="item-del" index="<%= index %>">x</span>
+			</li>
+		<% }) %>
+		<% if(selectArray.length){ %> 
+			<li class="clear-search-condition">清空筛选条件</li>
+		<% } %>
+	</ul>

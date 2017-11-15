@@ -1,0 +1,85 @@
+.approve-status-wrap{
+	display:flex;
+	.status-item{
+		flex: 1;
+		text-align:center;
+		height: 34px;
+		line-height:34px;
+		font-size: 12px;
+		position:relative;
+	}
+	.status-first-item,.status-finish-item{
+		background-color:$Z4;
+		span{
+			width: 20px;
+		    height: 14px;
+		    display: block;
+		    margin: 10px auto;
+		    background-image: url(../../images/icons.png);
+		    background-position: -35px 0;
+		}
+	}
+	.status-first-item{
+		border-radius:34px 0 0 34px;
+	}
+	.status-finish-item{
+		&:before{
+			background-color:$Z4;
+		}
+	}
+
+
+	.status-going-item{
+		background-color:$C3;
+		.user-photo{
+			display:block;
+			position:relative;
+			text-indent:35px;
+			color:#fff;
+			width:115px;
+			margin:2px auto;
+			
+			&:before{
+				display:block;
+				content:"";
+				width:30px;
+				height:30px;
+				border-radius:30px;
+				background-image:url(../../images/home/11.png);
+				background-size:100%;
+				position:absolute;
+				left:0;
+				top:0;
+			}
+		}
+		&:before{
+			background-color:$C3;
+		}
+	}
+	.status-undo-item,.status-last-item{
+		background-color:$M4;
+		color:$M3;
+		text-align:center;
+		&:before{
+			background-color:$M4;
+		}
+	}
+	.status-last-item{
+		border-radius:0 34px 34px 0;
+	}
+	.status-first-item,.status-undo-item,.status-finish-item,.status-going-item{
+		&:before{
+		    width: 22px;
+		    height: 24px;
+		    content: "";
+		    border-right: 2px solid #fff;
+		    border-bottom: 2px solid #fff;
+		    position: absolute;
+		    transform: rotateZ(-45deg);
+		    right: -12px;
+		    top: 4px;
+		    z-index: 9;
+		}
+	}
+
+}

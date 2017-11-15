@@ -1,0 +1,92 @@
+@charset "utf-8";
+//通用雪碧图路径
+$iconsImgUrl:url("../../images/icons.png");
+$btnImgUrl:url("../../images/btn.png");
+$headImgUrl:url('../../images/header.png');
+$fontfamily-base: "Microsoft YaHei","SimSun",Arial, Helvetica, sans-serif;
+$TitleFontFamily:"微软雅黑","SimSun",Arial, Helvetica, sans-serif;
+
+//主色
+	$C1:#004170;
+	$C2:#005999;
+	$C3:#1687d9;
+	$C4:#8CCCF8;
+	$C5:#084E82;
+//中性色
+	$M1:#36434D;
+	$M2:#66757F;
+	$M3:#ACB7BF;
+	$M4:#E4EBF0;
+	$M5:#F5F8FA;
+	$M6:#ffffff;
+
+	$Z4:#38ba72;
+	
+	$Ease:cubic-bezier(.25,.1,.25,1);
+	$Spring:cubic-bezier(.66,1.65,.23,.87);
+
+
+	$Spring2:cubic-bezier(.44,1.53,.32,.92);
+	$Linear:linear;
+
+
+
+
+//common-style
+	.font-12{font-size: 12px;}
+	.font-14{font-size: 14px;}
+	.font-16{font-size: 16px;}
+//重置滚动条宽度
+	::-webkit-scrollbar {
+	    // width: 6px!important;
+	}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent!important;
+    background-image: none;
+    color: $M1;
+}
+//通用清除浮动
+	.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+//重置placeholder样式
+	::-webkit-input-placeholder{
+		color:$M3!important;
+		font-family: "宋体";
+		font-size: 14px;
+		color:yellow;
+	}
+
+	input::-webkit-input-placeholder { 
+	    color:#09f;
+	}
+
+	
+	body,div,span,ul,li,a{
+	  margin: 0;
+	  padding:0;
+	}
+	a{
+	  text-decoration: none;
+	}
+	ul,li{
+		list-style:none;
+	}
+	input{
+		outline: none;
+	}
+
+//全局页面框架级样式
+
+	#main-region {
+	    width: 100%;
+	    box-sizing: border-box;
+	    margin-top: 50px;
+	    // overflow: hidden;
+	    min-width: 850px;
+	    padding-bottom: 30px;
+	    -webkit-user-select: none;
+	}
+	// .content-wrapper-bg{background-color:$M5};
+	.common-box-shadow{box-shadow: 1px 2px 7px #ddd;}
+
+
+

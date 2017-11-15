@@ -1,0 +1,103 @@
+@charset "utf-8";
+.user-page-wrapper{
+	.sit-map{
+		padding: 10px 0 5px 20px;
+		background-repeat:no-repeat;
+		margin-bottom: 10px;
+		background: #f5f8fa;
+	}
+	.content-part{
+		box-sizing: border-box;
+		width:100%;
+		padding-left:294px;
+		.user-card{
+			width: 270px;
+			height:520px;
+			
+			float:left;
+			margin-left:-294px;
+			background-position: 0px -4px;
+			
+		}
+		.user-tabs{
+
+		}
+		.user-info{
+			float: left;
+			border-left: 1px solid #e4ebf0;
+			width: 100%;
+			box-sizing: border-box;
+			background-color:$M6;
+			padding: 20px;
+			img{
+				display:block;
+				height: auto;
+				width:100%;
+				margin-left:6px;
+				background-repeat:no-repeat;
+			}
+			.user-tabs{
+				
+			}
+			.base-tab{
+				margin: 30px 0 30px;
+				position: relative;	
+				ul{
+					border-bottom: 1px solid #e4ebf0;
+					li{
+						position: relative;
+						float: left;
+						padding: 6px 11px;
+						margin-bottom: -1px;
+						background: #fff;
+						font-size: 12px;
+						color: #667580; 
+					}
+					.active{
+						border: 1px solid #e4ebf0;
+						border-bottom-color: transparent;
+						color: #005999;
+					}
+				}
+			}
+			.base-info{
+
+				.filed{
+					font-family: PingFangSC-Regular;
+					border-bottom: solid 1px #e4ebf0;
+					span{
+						display: inline-block;
+						padding: 20px 0 5px 0;
+					}
+					.user-title{
+						width: 100px;
+						color: #667580;
+						text-align: right;
+					}
+					.user-content{
+						margin-left:  20px;
+						color: #36434d;
+					}
+				}
+				
+			}
+			.origanization{
+				.ori-header{
+					margin-top: 14px;
+					margin-left: 25px;
+					.drop-down-btn {
+	    				display: inline-block;
+	    			}
+				}
+				img{
+					width: 750px;
+					margin: 20px auto;
+				}
+				
+			}
+			.dash-body, .origanization{
+				display: none;
+			}
+		}
+	}
+}

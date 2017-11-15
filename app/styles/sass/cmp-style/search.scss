@@ -1,0 +1,32 @@
+.search-conduct{
+	.form-input input {
+		background-color:transparent;
+	}
+	span.placeholder{
+		display: block;
+		width: 56px;
+		height:16px;
+		position: absolute;
+		top: 2px;
+		left:50%;
+		margin-left:-28px;
+		z-index: -1;
+		background-image:url(../svg-v2/sousuo.svg);
+		background-position:0 0;
+		background-repeat:no-repeat;
+		text-indent: 25px;
+		font-size: 14px;
+		color:$M3;
+		line-height:18px;
+		transition: left .3s $Ease;
+	}
+	.form-input-active{
+		span.placeholder{
+			left:30px;
+			transition:left .3s $Ease;
+		}
+		input{
+			text-indent: 23px;
+		}
+	}
+}

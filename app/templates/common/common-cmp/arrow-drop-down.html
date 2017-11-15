@@ -1,0 +1,56 @@
+
+<div class="drop-down-btn">
+  <span class="text font-14"><%= title %></span>
+</div>
+
+<div class="drop-list-wrapper <%= listPosition?listPosition:''%>">
+  <div class="drop-down-list">
+    <ul class="list-ul-box list-ul-box-front">
+        <!--普通下拉列表-->
+        <% if( type == "text"){ %>
+           
+            <% _.each(itemData,function(item,index){ %>
+              <li class="list-item" item-index="<%= index %>"><%=item.title%></li>
+           <% }) %>
+
+        <!--链接下拉列表-->
+        <%}else if( type == "link"){ %>
+              
+              <% _.each(itemData,function(item,index){ %>
+                <li class="list-item">
+                   <a href="<%= item.link %>" item-index="<%= index %>"><%=item.title%></a>
+                </li>
+              <% }) %>
+
+        <!--多选下拉列表-->
+        <%}else if( type == "checkbox"){ %>
+
+              <% _.each(itemData,function(item,index){ %>
+                <li class="list-item" item-index="<%= index %>">
+                    <input type="checkbox">
+                   <a href="<%= item.link %>"><%=item.title%></a>
+                </li>
+              <% }) %>
+        <!--单选下拉列表-->
+        <%}else if( type == "radiobox"){ %>
+              <% _.each(itemData,function(item,index){ %>
+                <li class="list-item" item-index="<%= index %>">
+                    <input type="radiobox">
+                    <a href="<%= item.link %>"><%=item.title%></a>
+                </li>
+              <% }) %>
+        <% } %>
+        
+
+
+
+        <li class="item-high-light"></li>
+    </ul>
+
+    <ul class="list-ul-box list-ul-box-shadow">
+         <% _.each(itemData,function(item,index){ %>
+           <li class="<%= 'item-' + index %>"><%=item.title%></li>
+        <% }) %>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+/*--------------messages---------------*/
+.staff-page-wrapper{
+        padding-left: 233px;
+        box-sizing: border-box;
+        width: 100%;
+        .left-nav{
+            background-image: url("../../images/message/nav.svg");
+        }
+}
+  .message-content{
+    float:left;
+  }
+  .message-body {
+    background-color: white;
+    padding: 25px 15px 10px 20px;
+    
+    .mes-item{
+        padding: 20px 0 ;
+        border-bottom:  1px solid #e4ebf0;
+        .mes-type {
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            line-height: 1.9;
+            color: #acb7bf;
+        }
+        .mes-pic {
+            width: 50px;
+            height: 50px;
+            margin-left: 30px;
+            margin-right: 11px;    
+            background-image: url("../../images/home/photo-v1.png");
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            background-size: 100% 100%;
+        }
+        .mes-right{
+            display: inline-block;
+            vertical-align: middle;
+            .mes-detail {
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                line-height: 1.7;
+                color: #005999;
+                margin-bottom: 2px;
+                .mes-name{
+                    cursor: pointer;
+                }
+                .mes-enter{
+                    cursor: pointer;
+                }
+                .mes-content{
+                    color: #36434d;
+                    margin:0 25px 0px 5px;
+                }
+            }
+            .mes-time{
+                font-family: PingFangSC-Regular;
+                font-size: 11px;
+                line-height: 1.8;
+                color: #667580;
+            }
+        }
+    }
+    .mes-pages{
+        width: 550px;
+        height: 40px;
+        background-image: url("../../images/human/page-num.png");
+        background-position-y: 0;
+        float: right;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+    }
+}

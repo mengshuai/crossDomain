@@ -1,0 +1,80 @@
+/*--------------products---------------*/
+.product-list {
+    padding-top: 20px;
+    .pro-list {
+        width: 230px;
+        height: 400px;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        line-height: 1.8;
+        color: #36434d;
+        margin:20px;
+        float: left;
+        display: inline-block;
+        .pro-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            display: inline-block;
+            background-image: url("../svg-v2/products-icon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .icon-deepblue {
+            @extend .pro-icon;
+            background-color: #40afd8;
+        }
+        .icon-blue {
+            @extend .pro-icon;
+            background-color: #53c6c6;
+        }
+        .icon-red {
+            @extend .pro-icon;
+            background-color: #f28d48;
+        }
+        .icon-orange {
+            @extend .pro-icon;
+            background-color: #e4a600;
+        }
+        .icon-green {
+            @extend .pro-icon;
+            background-color: #38ba72;
+        }
+        .title-text {
+          width: 140px;
+          height: 36px;
+          font-family: PingFangSC-Regular;
+          font-size: 20px;
+          line-height: 1.8;
+          color: #36434d;
+          display: inline-block;
+          border-bottom:  1px solid #e4ebf0;
+          vertical-align: top;
+        }
+        .list-body {
+            padding-left: 60px;
+            margin-top: -15px;
+            .item-common{
+                font-family: PingFangSC-Regular;
+                line-height: 1.7;
+                color: #005999;
+                font-size: 12px;
+                display: block;
+                height: 20px;
+            }
+            .item-l1{
+                @extend .item-common;
+                font-size: 14px;
+                height: 24px;
+            }
+            .item-l2{
+                @extend .item-common;
+                text-indent: 21px;
+            }
+            .item-l3{
+                @extend .item-common;
+                text-indent: 37px;
+            }
+        }
+    }
+}

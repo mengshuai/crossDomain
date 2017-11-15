@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/css/all.css"/>
+	<link href="styles/css/tita-common.css"/>
+	<script type="text/javascript" src="scripts/vendor/components/jquery/index.js"></script>
+	<script type="text/javascript" src="scripts/iTalentSDKClient.js"></script>
+	<script type="text/javascript" src="scripts/BSGlobal.js"></script>
+
+</head>
+<body style="height: 300px; width: 400px; background-color: red; margin:0px; padding: 0px;">
+	
+
+	<h1>我是一个Widget</h1>
+
+	<button id="send_message">点击发送一个事件给iframe</button>
+	<script type="text/javascript">
+		window.iTalentSDK.register({
+			listenEvent : 'main_frame_change',
+			cb : function(data) {
+				console.log("I'm widget1 and I receive a message from main iframe!")
+				console.log(data)
+				alert("I'm widget1 and I receive a message from main iframe!");
+			}
+		})
+
+
+		$('#send_message').on('click', function(){
+			iTalentSDK.sendMessage({
+				publishEvent : "widget1_change",
+				data : {
+					from : "widget1", 
+					to : "main_frame",
+					name : "test"
+				}
+			})
+		})
+		
+	</script>
+	
+</body>
+</html>

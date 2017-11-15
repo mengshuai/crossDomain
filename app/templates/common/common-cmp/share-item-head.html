@@ -1,0 +1,25 @@
+<div class='item-head'>
+	<div class='left'>
+		<% if(projectName && projectName != "" ){%>
+			<span class='project'><%=projectName%></span>
+		<%}%>
+
+		<% if(projectName && userName){%>
+			<span class="extra">项目中</span>
+		<%}%>
+
+		<% if(userName && userName != "" ){%>
+			<span class='name'><%=userName%></span>
+		<%}%>
+
+		
+		<div class='time'>1分钟前</div>
+	</div>
+
+	<div class='right'>
+		<div class='user-right'>仅相关人员可见</div>
+		<div class='btns'>
+			<div class="dropdown"></div>
+		</div>
+	</div>
+</div>

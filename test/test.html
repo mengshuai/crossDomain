@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<title>Home Page</title>
+	<!--RepoVersion:1018-->
+	<link href="../app/styles/css/all.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/testem/jasmine.css">
+    <script src="/testem/jasmine.js"></script>
+    <script src="/testem.js"></script>
+    <script src="/testem/jasmine-html.js"></script>
+	<!--hotfix css start-->
+	<!--hotfix css end-->
+	<script>
+		var BSGlobal = {
+			root: "/home"
+			, start: new Date
+			, prefillingData: {}
+			, container: "#bs_layout_container"
+		};
+	</script>
+  </head>
+  <body>
+  	<div id="bs_layout_container" class="container" style="position:absolute; right: 150px; top: 200px;"></div>
+
+  	<iframe id="a123456789" style="display: none"></iframe>
+  	<iframe id="aaa" style="display: none"></iframe>
+  	<iframe id="test" style="display: none"></iframe>
+  	<iframe id="iframe" style="display: none"></iframe>
+
+
+	<h1>Require.js with Jasmine Example</h1>
+	<script src="../app/scripts/vendor/components/requirejs/index.js" data-main="scripts/main"></script>
+	<script>
+		requirejs.config({
+		    baseUrl: '../app/scripts',
+		    paths: {
+		        test :　'../../test'
+		    },
+		    map: {
+				'*': {
+				//top channels start
+				"views/home/all-in-one":"views/home/index-page-view"
+				,"views/about/all-in-one":"views/about/index-page-view"
+				//top channels end
+				}
+			}
+		});
+	</script>
+	<script type="text/javascript">
+	require(['config'], function(mainConfigFile){
+		require(['talent','collections/index', 'routers/index', 'helpers/index', 'network/index'],
+			function(Talent, IndexCollection, IndexRouter, IndexHelper, IndexNetwork, IndexQuiz){
+				require(['test/index'], function() {
+					var env = jasmine.getEnv();
+				    env.addReporter(new jasmine.HtmlReporter);
+				 	env.execute();
+				})
+		});
+	})
+	</script>
+
+	<div id="demo-content" style="display:none">
+		<div class="parentClass" id="parentId">
+			<h1 id="titId">这是一个demo</h1>
+			<h3>aaa</h3>
+			<h3>bbb</h3>
+			<div class="child1">
+				<p>12345</p>
+			</div>
+			<div class="child2">22222</div>
+			<div class="child3"></div>
+			<ul>
+				<li>111</li>
+				<li class="n2">222</li>
+				<li>333</li>
+			</ul>
+			<input type="text" value="demo" name="demo" />
+		</div>
+	</div>
+
+  </body>
+</html>
